@@ -1,0 +1,10 @@
+.banner {
+  width: 1904px;
+  margin-left: -113px;
+  height: 512px;
+  background-color: bisque;
+  background-image: url("images/background/IMG_0445.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
