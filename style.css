@@ -286,6 +286,7 @@ a {
 
 #explore-animation {
   display: flex;
+  justify-content: space-between;
 }
 
 .pic_dbz {
