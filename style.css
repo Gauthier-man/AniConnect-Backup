@@ -38,7 +38,7 @@ body {
 main {
   /* max-width: 1920px;
   margin: auto; */
-  padding: 4rem 7rem;
+  padding: 4rem 7rem 0;
 }
 
 header {
@@ -52,7 +52,9 @@ header {
   margin: auto;
   background-color: #0f0f0f;
   width: 1858px;
+  /* width: 2315px; */
   padding: 2rem;
+  height: 60px;
 }
 
 header::before {
@@ -128,9 +130,9 @@ a {
 .background-container {
   position: relative;
   z-index: 0; /* Le fond reste derrière le contenu */
-
+  /* 
   max-width: 1920px;
-  margin: auto;
+  margin: auto; */
 }
 
 .background-container::before {
@@ -202,6 +204,30 @@ a {
   border-radius: 2rem;
 }
 
+.btn.contact {
+  display: inline-block;
+  text-align: center;
+  background: linear-gradient(135deg, #f39c12, #f8d14e);
+  border-radius: 8px;
+  padding: 15px 30px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  text-decoration: none;
+  overflow: hidden;
+
+  border-radius: 2rem;
+}
+
+.btn.contact:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #f8d14e, #f39c12);
+  /* Inverse des couleurs */
+}
+
 .btn h3 {
   color: white;
   font-weight: bold;
@@ -213,6 +239,14 @@ a {
   border-radius: 2rem;
   border: 2px solid black;
   text-align: center;
+
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.btn_black:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Ajout d’une ombre */
 }
 
 .contact {
@@ -243,9 +277,6 @@ a {
   display: flex;
   align-items: center;
   gap: 2rem;
-}
-
-.explore_pics img {
 }
 
 #explore-animation {
@@ -317,6 +348,22 @@ a {
   margin-top: 2rem;
 }
 
+.first-info .card_review {
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+}
+
+.first-info .card_review:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
 .second-info {
   display: flex;
   justify-content: center;
@@ -325,11 +372,34 @@ a {
   margin-bottom: 6rem;
 }
 
+.second-info .card_review {
+  position: relative;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+}
+
+.second-info .card_review:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
 .container_card_animes img {
   width: 247px;
   height: 247px;
   object-fit: cover;
   border-radius: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition douce */
+}
+
+.container_card_animes img:hover {
+  transform: scale(1.1); /* Agrandit légèrement l'image */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Ajoute une ombre */
+  cursor: pointer; /* Change le curseur */
 }
 
 .container_card_animes {
@@ -400,20 +470,33 @@ a {
   height: 500px;
 
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* width: 114%; */
+  width: 1904px;
+  margin-left: -113px;
 }
 
 #join_forum h2 {
   color: white;
   font-size: 3rem;
   font-weight: 600;
+
+  margin-bottom: 0;
+  /* margin-top: 4rem; */
 }
 
 #join_forum p {
-  width: 44%;
+  width: 47%;
   margin: auto;
 
   color: white;
   font-size: 1.5rem;
+  padding: 2rem 0;
 }
 
 .btn_start {
@@ -423,4 +506,97 @@ a {
   height: 85px;
   border-radius: 1.2rem;
   font-size: 1.5rem;
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.btn_start:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Ombre subtile */
+  transform: translateY(-5px); /* Déplacement léger vers le haut */
+}
+
+.read_more {
+  background: none;
+  border: none;
+
+  color: white;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.fi-rr-arrow-right {
+  margin-top: 1rem;
+}
+
+.more_info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+footer {
+  background-color: #0f0f0f;
+  width: 100%;
+  height: 400px;
+  position: relative; /* Nécessaire pour positionner l'overlay */
+
+  background-image: url("images/footer/attaque-titans-1-ext1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1; /* Assurez-vous que l'image reste derrière le contenu */
+}
+
+footer::after {
+  content: ""; /* Nécessaire pour créer un élément virtuel */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: -1; /* Positionne l'overlay derrière le contenu */
+}
+
+ul li {
+  font-size: 1.2rem;
+}
+
+ul {
+  color: white;
+  display: inline;
+  list-style-type: none;
+}
+
+h5 {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+footer p {
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer_block {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  padding: 2rem 0;
+}
+
+.block_logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.block_logo img {
+  width: 100px;
 }
