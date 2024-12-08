@@ -1,0 +1,125 @@
+.first_block {
+    background-color: #212222;
+    width: 100%;
+    height: 70px;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+  }
+
+  #topics {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+
+
+  .line_content {
+    background-color:#0F0F0F;
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    width: calc(100% + 14rem);
+    margin-left: -7rem;
+  }
+
+
+ 
+  .text_content {
+    margin-left: 8rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .fi-rs-angle-right {
+    color: white;
+    margin-top: 5px;
+  }
+
+  .btn_new_discussion {
+    background-color: #5C3F81;
+    width: 220px;
+    height: 54px;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  #topics {
+ 
+  }
+
+  .topics-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .search-container {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        /* padding: 23px; */
+        width: 332px;
+        height: 54px;
+        background-color: white;
+  }
+  
+  .search-container i {
+    color: #888; /* Couleur de l'icône */
+    margin-right: 5px; /* Espacement entre l'icône et l'input */
+    font-size: 16px; /* Taille de l'icône */
+  }
+  
+  .search-input {
+    border: none;
+    outline: none; /* Retirer les styles par défaut */
+    flex: 1; /* Prendre tout l'espace restant */
+    font-size: 14px; /* Taille du texte */
+  }
+
+  .fi-rr-search {
+    margin-left: 1rem;
+  }
+
+  .btn_popular {
+    background-color: #9360D0;
+    width: 135px;
+    height: 54px;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  .btn_other {
+    background-color: white;
+    width: 135px;
+    height: 54px;
+    border: none;
+    border-radius: 0.5rem;
+    color: black;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  .topics_controls {
+        display: flex;
+        justify-content: space-between;
+  }
